@@ -1,5 +1,6 @@
 
 /* Estilos da página index.html*/
+    /* Decorações específicas*/
 .container {
     display: flex;
     flex-flow: row wrap;
@@ -9,22 +10,62 @@
 
 .container2 {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row;
     justify-content: center;
-    align-items: space-around;
-    margin: 20px;
+    align-items: center;
 }
 
+.menu li { 
+    display: inline;
+    padding: 15px;
+    font-size: 20px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #786fa6;
+}
+
+.menu li a:hover { 
+    color: #303952;
+}
+
+.tm-social {
+    width: 50px;
+    height: 50px;
+}
+
+
+/* Decorações gerais*/
+.mb-50 {
+    margin-bottom: 50px;
+}
+.mr-50 {
+    margin-right: 50px;
+}
+
+.center {
+    text-align: center;
+}
 .mr-30{
     margin-right: 30px;
 }
 
-.br-50 {
+.br-90 {
     border-radius: 90%;
 }
 
 .justify {
     text-align: justify;
+}
+
+.wh-300 {
+    width: 300px;
+    height: 300px;
+}
+
+.p-30 {
+    padding: 30px;
 }
 
 /* Estilos da página contato.html*/
