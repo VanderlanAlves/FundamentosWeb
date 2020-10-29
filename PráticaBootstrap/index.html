@@ -191,36 +191,47 @@
   </div>
 </div>
 
-<div class="row d-flex align-items-center">
+<div class="row">
   <div class="col-md-6">
 <form>
+
   <div class="form-group">
-    <label for="exampleFormControlInput1">Endereço de email</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
+    <label for="nome">Nome:</label>
+    <input type="text" class="form-control" id="nome" onkeyup='validaNome()'>
+    <div id='txtNome'></div>
   </div>
+
   <div class="form-group">
-    <label for="exampleFormControlSelect1">Select de exemplo</label>
-    <select class="form-control" id="exampleFormControlSelect1">
-      <option>1</option>
-      <option>2</option>
-      <option>3</option>
-      <option>4</option>
+    <label for="email">Endereço de email:</label>
+    <input type="email" class="form-control" id="email" placeholder="nome@exemplo.com" onkeyup='validaEmail()'>
+    <div id='txtEmail'></div>
+  </div>
+
+  <div class="form-group">
+    <label for="TipoEnsaio">Tipo de ensaio:</label>
+    <select multiple class="form-control" id="TipoEnsaio">
+      <option>Ensaio Casamento</option>
+      <option>Ensaio Individual</option>
+      <option>Ensaio Criança</option>
+      <option>Ensaio Formatura</option>
+      <option>Ensaio Artístico Individual</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="QuantidadeFotos">Quantidade de fotos:</label>
+    <select multiple class="form-control" id="QuantidadeFotos">
       <option>5</option>
+      <option>10</option>
+      <option>15</option>
+      <option>20</option>
+      <option>25</option>
+      <option>30 ou mais</option>
     </select>
   </div>
   <div class="form-group">
-    <label for="exampleFormControlSelect2">Exemplo de select múltiplo</label>
-    <select multiple class="form-control" id="exampleFormControlSelect2">
-      <option>1</option>
-      <option>2</option>
-      <option>3</option>
-      <option>4</option>
-      <option>5</option>
-    </select>
-  </div>
-  <div class="form-group">
-    <label for="exampleFormControlTextarea1">Exemplo de textarea</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    <label for="Observacoes">Observações:</label>
+    <textarea class="form-control" id="Observacoes" rows="3"></textarea>
   </div>
 
   <div class="form-group d-flex justify-content-end">
@@ -269,6 +280,7 @@
 </div>
 <!--/Rodapé-->
 
+<script src="assets/js/script.js"></script>
 
 <!--Scripts necessários para a utilização dos códigos JS do Bootstrap-->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
